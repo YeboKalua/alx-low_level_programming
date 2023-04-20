@@ -2,7 +2,7 @@
 
 /**
  *  main - the function prints out text using puts()
- *  return: 0 (Success)
+ *  return: always 0 (Success)
  */
 
 int main(void)
