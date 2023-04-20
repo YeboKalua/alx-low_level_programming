@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-/*
- * this is a comment about the main function
- * prints out using the function puts
+/**
+ *  main - the function prints out text using puts()
+ *  return: 0 (Success)
  */
 
 int main(void)
