@@ -25,4 +25,5 @@ int print_sign(int n)
 		printf("-\n");
 		return (-1);
 	}
+	printf("\n");
 }
