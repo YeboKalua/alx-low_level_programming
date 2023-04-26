@@ -2,20 +2,18 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * main - main function
+ * print_alphabet - prints the alphabet in lower case
  * description: print the alphabet using putchar
  * Return: return 0 of successful
  */
-int main(void)
+void print_alphabet(void)
 {
-	char c = 'a';
+	int i;
 
-	while (c <= 'z')
+	for (i = 97; i <= 122; i++)
 	{
-		_putchar(c);
-		c++;
+		_putchar(i);
 	}
 	_putchar('\n');
-	return (0);
 }
 
