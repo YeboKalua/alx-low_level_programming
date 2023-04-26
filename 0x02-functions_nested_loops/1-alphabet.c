@@ -1,10 +1,8 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 /**
- * print_alphabet - prints the alphabet in lower case
- * description: print the alphabet using putchar
- * Return: return 0 of successful
+ * print_alphabet - main function
+ * description: prints the alphabet in lower case
+ * Return: 0 if successful
  */
 void print_alphabet(void)
 {
@@ -13,7 +11,7 @@ void print_alphabet(void)
 	for (i = 97; i <= 122; i++)
 	{
 		_putchar(i);
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
 
