@@ -2,12 +2,11 @@
 /**
  * print_most_numbers - function name
  * description: prints numbers except 2 and 4
- * @n: integer
  * Return: void
  */
 void print_most_numbers(void)
 {
-	int n;
+	char n;
 
 	for (n = 48; n <= 57; n++)
 	{
