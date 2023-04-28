@@ -25,7 +25,14 @@ int main(void)
 		}
 		else
 		{
+			if (n == 100)
+			{
+				printf("%d", n);
+			}
+			else
+			{
 			printf("%d%s", n, " ");
+			}
 		}
 	}
 	printf("\n");
