@@ -13,28 +13,26 @@ int main(void)
 	{
 		if (n % 15 == 0)
 		{
-			printf("FizzBuzz%s", " ");
+			printf("%sFizzBuzz", " ");
 		}
 		else if (n % 3 == 0)
 		{
-			printf("Fizz%s", " ");
+			printf("%sFizz", " ");
 		}
 		else if (n % 5 == 0)
 		{
-			printf("Buzz%s", " ");
+			printf("%sBuzz", " ");
+		}
+		else if (n == 1)
+		{
+			printf("%d", n);
 		}
 		else
 		{
-			if (n == 100)
-			{
-				printf("%d", n);
-			}
-			else
-			{
-			printf("%d%s", n, " ");
-			}
+			printf("%s%d", " ", n);
 		}
 	}
+
 	printf("\n");
 	return (0);
 }
