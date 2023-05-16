@@ -11,7 +11,7 @@
  */
 int check_number(char *strn)
 {
-	int n;
+	unsigned int n;
 
 	n = 0;
 
@@ -24,6 +24,7 @@ int check_number(char *strn)
 		n++;
 		return (1);
 	}
+	return (0);
 }
 /**
  * main - sums up numbers
