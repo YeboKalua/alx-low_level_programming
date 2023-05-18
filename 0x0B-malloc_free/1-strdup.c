@@ -11,6 +11,7 @@
 char *_strdup(char *str)
 {
 	int n = 0;
+	int i;
 	char *new_str;
 
 	if (str == NULL)
@@ -26,7 +27,7 @@ char *_strdup(char *str)
 	if (new_str == NULL)
 		return (NULL);
 
-	for (int i = 0; str[i]; i++)
+	for (i = 0; str[i]; i++)
 		str[i] == new_str[i];
 
 	return (new_str);
