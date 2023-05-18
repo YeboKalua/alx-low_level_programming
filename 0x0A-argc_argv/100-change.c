@@ -7,13 +7,13 @@
  */
 int coin_calculator(int cents)
 {
-	if (cents < 0)
-		return (0);
-
 	int coins[] = {25, 10, 5, 2, 1};
 	int n = sizeof(coins) / sizeof(coins[0]);
 	int count = 0;
 	int i;
+
+	if (cents < 0)
+		return (0);
 
 	for (i = 0; i < n; i++)
 	{
@@ -30,15 +30,14 @@ int coin_calculator(int cents)
  */
 int main(int argc, char **argv)
 {
+	int cents = atoi(argv[1]);
+	int coin_result = coin_calculator(cents);
+
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	int cents = atoi(argv[1]);
-
-	int coin_result = coin_calculator(cents);
 
 	printf("%d\n", coin_result);
 
