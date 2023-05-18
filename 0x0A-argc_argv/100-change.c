@@ -30,16 +30,19 @@ int coin_calculator(int cents)
  */
 int main(int argc, char **argv)
 {
-	int cents = atoi(argv[1]);
-	int coin_result = coin_calculator(cents);
+	if (argc == 2)
+	{
+		int cents = atoi(argv[1]);
+		int coin_result = coin_calculator(cents);
 
-	if (argc != 2)
+		printf("%d\n", coin_result);
+	}
+
+	else
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	printf("%d\n", coin_result);
 
 	return (0);
 }
