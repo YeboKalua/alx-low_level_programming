@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 
 	for (n = 0; n < size; n++)
 	{
-		if (n == size - 1)
+		if (n == (size - 1))
 		{
 			printf("%02hhx\n", ptr[n]);
 			break;
