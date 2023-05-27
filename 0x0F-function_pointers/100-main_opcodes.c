@@ -32,7 +32,7 @@ int main(int argc, char **argv)
 			printf("%02hhx\n", ptr[n]);
 			break;
 		}
-		printf("%02hhx", ptr[n]);
+		printf("%02hhx\n", ptr[n]);
 	}
 	return (0);
 }
