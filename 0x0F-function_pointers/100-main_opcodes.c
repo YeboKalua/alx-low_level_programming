@@ -29,10 +29,10 @@ int main(int argc, char **argv)
 	{
 		if (n == size - 1)
 		{
-			printf("%02x\n", ptr[n]);
+			printf("%02hhx\n", ptr[n]);
 			break;
 		}
-		printf("%02x", ptr[n]);
+		printf("%02hhx", ptr[n]);
 	}
 	return (0);
 }
