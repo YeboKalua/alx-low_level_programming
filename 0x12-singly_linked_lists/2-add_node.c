@@ -2,7 +2,7 @@
 #include <string.h>
 #include "lists.h"
 /**
- * add_node - adds new node 
+ * add_node - adds new node
  * @head: pointer to head node
  * @str: string to add at beginning
  * Return: new string added
@@ -23,4 +23,4 @@ list_t *add_node(list_t **head, const char *str)
 	(*head) = added;
 
 	return (*head);
-}	
+}
