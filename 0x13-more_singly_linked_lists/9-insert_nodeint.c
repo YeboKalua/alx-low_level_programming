@@ -4,6 +4,7 @@
  * @head: head node
  * @idx: index under consideration
  * @n: data in new node
+ * Return: new node
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
@@ -15,8 +16,10 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	if (toAdd == NULL || head == NULL)
 		return (NULL);
+
 	toAdd->n = n;
 	toAdd->next = NULL;
+
 	if (idx == 0)
 	{
 		toAdd->next = *head;
@@ -32,7 +35,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			return (toAdd);
 		}
 		else
-			toAdd = toAdd->next;
+			current = current->next;
 	}
 	return (NULL);
 }
